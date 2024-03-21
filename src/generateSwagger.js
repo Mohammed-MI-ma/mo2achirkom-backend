@@ -5,9 +5,10 @@ const options = {
   definition: {
     openapi: "3.0.0", // Specify the OpenAPI version
     info: {
-      title: "Your API", // Specify the title of your API
+      title: "API Documentation for the Mo2achirkom SAAS Platform", // Specify the title of your API
       version: "1.0.0", // Specify the version of your API
-      description: "API documentation for Your API", // Provide a description
+      description:
+        "Comprehensive API documentation providing developers with the necessary endpoints and data structures to seamlessly integrate with the Mo2achirkom SAAS (Software as a Service) platform. Explore detailed information on authentication, data retrieval, and manipulation functionalities to facilitate efficient and effective integration with the Mo2achirkom ecosystem",
     },
     servers: [
       {
@@ -16,7 +17,7 @@ const options = {
     ],
   },
   // Paths to the API routes and their annotations
-  apis: ["./routes/*/*.js"], // Replace with the actual path to your route files
+  apis: ["./src/routes/application/*.js", "./src/routes/auth/*.js"], // Replace with the actual path to your route files
 };
 
 // Initialize swagger-jsdoc
